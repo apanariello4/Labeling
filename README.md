@@ -1,5 +1,39 @@
 # Labeling
 
+## Windows
+
+1. Scaricare [Yolo_Label](https://drive.google.com/open?id=1MJyMcqRKhiNPzJkRPQ2CmGePK9XddBNP) e le [immagini raw](https://photos.google.com/share/AF1QipONRHwgfi2OoVvSWzePQ2oaVHdzKbzj_URpJxN6DmiDjSvkzSOFgQg2GXja1S-Wlg?key=Y1lOZ2N2c2x5YnNuY1FiVVhBS2JJUkRJWFd4RDVB).  (Li trovate anche sul drive in informatica/labeling)
+
+2. Creare un file .txt nella stessa directory dove si trova la cartella con le immagini, con all'interno i nomi delle labels:
+```
+blue-cone
+yellow-cone
+orange-cone
+```
+
+3. Eseguire YoloLabel.exe, cliccare su open files e selezionare la cartella in cui ci sono le immagini e il file testo con le labels.
+
+4. Per ogni immagine tracciare dei box intorno ai coni il più precisi possibile con la label corrispondente.
+
+
+## SHORTCUTS
+
+| Key | Action |
+|---|:---:|
+| `A` | Save and Prev Image  |
+| `D,  Space` | Save and Next Image |
+| `S` | Next Label <br> ![ezgif-5-f7ee77cd24c3](https://user-images.githubusercontent.com/35001605/47703190-d3049a00-dc62-11e8-846f-5bd91e98bdbc.gif)  |
+| `W` | Prev Label <br> ![ezgif-5-ee915c66dad8](https://user-images.githubusercontent.com/35001605/47703191-d39d3080-dc62-11e8-800b-986ec214b80c.gif)  |
+| `Ctrl + S` | Save |
+| `Ctrl + C` | Delete all existing bounding boxes in the image |
+
+| Mouse | Action |
+|---|:---:|
+| `Right Click` | Delete Focused Bounding Box in the image <br> ![ezgif-5-8d0fb51bec75](https://user-images.githubusercontent.com/35001605/47706913-c20d5600-dc6d-11e8-8a5c-47065f6a6416.gif) |
+| `Wheel Down` | Save and Next Image  |
+| `Wheel Up` | Save and Prev Image |
+
+
 ##  Linux
 
 1. Posizionarsi nella cartella desiderata e clonare il programma Yolo_Mark.
@@ -65,35 +99,3 @@ Shortcut | Description |
 <kbd>k</kbd> | Hide object name |
 <kbd>h</kbd> | Help |
 
-## Windows
-
-1. Scaricare [Yolo_Label](https://drive.google.com/open?id=1MJyMcqRKhiNPzJkRPQ2CmGePK9XddBNP) e le [immagini raw](https://photos.google.com/share/AF1QipONRHwgfi2OoVvSWzePQ2oaVHdzKbzj_URpJxN6DmiDjSvkzSOFgQg2GXja1S-Wlg?key=Y1lOZ2N2c2x5YnNuY1FiVVhBS2JJUkRJWFd4RDVB).
-
-2. Creare un file .txt nella stessa directory dove si trova la cartella con le immagini, con all'interno i nomi delle labels:
-```
-blue-cone
-yellow-cone
-orange-cone
-```
-
-3. Eseguire YoloLabel.exe, cliccare su open files e selezionare la cartella in cui ci sono le immagini e il file testo con le labels.
-
-4. Per ogni immagine tracciare dei box intorno ai coni il più precisi possibile con la label corrispondente.
-
-
-## SHORTCUTS
-
-| Key | Action |
-|---|:---:|
-| `A` | Save and Prev Image  |
-| `D,  Space` | Save and Next Image |
-| `S` | Next Label <br> ![ezgif-5-f7ee77cd24c3](https://user-images.githubusercontent.com/35001605/47703190-d3049a00-dc62-11e8-846f-5bd91e98bdbc.gif)  |
-| `W` | Prev Label <br> ![ezgif-5-ee915c66dad8](https://user-images.githubusercontent.com/35001605/47703191-d39d3080-dc62-11e8-800b-986ec214b80c.gif)  |
-| `Ctrl + S` | Save |
-| `Ctrl + C` | Delete all existing bounding boxes in the image |
-
-| Mouse | Action |
-|---|:---:|
-| `Right Click` | Delete Focused Bounding Box in the image <br> ![ezgif-5-8d0fb51bec75](https://user-images.githubusercontent.com/35001605/47706913-c20d5600-dc6d-11e8-8a5c-47065f6a6416.gif) |
-| `Wheel Down` | Save and Next Image  |
-| `Wheel Up` | Save and Prev Image |
