@@ -13,7 +13,13 @@ orange-cone
 
 3. Eseguire YoloLabel.exe, cliccare su open files e selezionare la cartella in cui ci sono le immagini e il file testo con le labels.
 
-4. Per ogni immagine tracciare dei box intorno ai coni il più precisi possibile con la label corrispondente.
+4. Per ogni immagine tracciare dei box intorno ai coni il più precisi possibile con la label corrispondente. (Cliccando con il tasto destro sul colore della classe è possibile modificarlo così da renderlo uguale a quello del cono, così da non confondersi)
+   - Se i coni sono molto lontani ed il box risulta essere troppo piccolo, il tool non lo prende. In questo caso non considarare il cono lontano.
+   - Se il cono è nascosto da un altro cono, fare il box come se il cono fosse intero, quindi prendere anche la parte nascosta.
+
+5. Una volta labelate tutte le immagini nella cartella dove si trovano le immagini sarà presente un file .txt per ogni immagine. Bisogna caricare sul drive in informatica/labeling/labels tutti i file .txt relative alle proprie immagini.
+
+Il tool salva per ogni azione il file di testo, si può quindi uscire in qualsiasi momento e non perdere il lavoro.
 
 
 ## SHORTCUTS
