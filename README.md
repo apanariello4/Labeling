@@ -9,12 +9,13 @@
 blue-cone
 yellow-cone
 orange-cone
+orange-cone-big
 ```
 
 3. Eseguire YoloLabel.exe, cliccare su open files e selezionare la cartella in cui ci sono le immagini e il file testo con le labels.
 
 4. Per ogni immagine tracciare dei box intorno ai coni il più precisi possibile con la label corrispondente. (Cliccando con il tasto destro sul colore della classe è possibile modificarlo così da renderlo uguale a quello del cono, così da non confondersi)
-   - Se i coni sono molto lontani ed il box risulta essere troppo piccolo, il tool non lo prende. In questo caso non considarare il cono lontano.
+   - Prendere tutti i coni, anche i più piccoli (con il tool windows non si riesce, bisogna usare quello linux)
    - Se il cono è nascosto da un altro cono, fare il box come se il cono fosse intero, quindi prendere anche la parte nascosta.
 
 5. Una volta labelate tutte le immagini nella cartella dove si trovano le immagini sarà presente un file .txt per ogni immagine. Bisogna caricare sul drive in informatica/labeling/labels tutti i file .txt relative alle proprie immagini.
@@ -61,7 +62,7 @@ chmod u+x program_name
 
 4. Andare in `.../Yolo_Mark/x64/Release/data` e modificare `obj.data` con:
 ```
-classes= 3
+classes= 4
 train  = data/train.txt
 valid  = data/train.txt
 names = data/obj.names
@@ -73,6 +74,7 @@ ed `obj.names` con
 blue-cone
 yellow-cone
 orange-cone
+orange-cone-big
 ```
 5. Cancellare le immagini già presenti in `.../Yolo_Mark/x64/Release/data/img` ed inserire [le proprie](https://photos.google.com/share/AF1QipONRHwgfi2OoVvSWzePQ2oaVHdzKbzj_URpJxN6DmiDjSvkzSOFgQg2GXja1S-Wlg?key=Y1lOZ2N2c2x5YnNuY1FiVVhBS2JJUkRJWFd4RDVB).
    
